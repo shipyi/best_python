@@ -4,3 +4,4 @@ objgraph == 3.5.0
 pympler == 0.9
 xdot == 1.2
 graphviz ==  0.17
+memory_profiler

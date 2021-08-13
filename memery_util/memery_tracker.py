@@ -1,6 +1,8 @@
 import objgraph
 from pympler import tracker
-if __name__=="__main__":
+
+
+def memery_tracker():
     x = []
     y = [x, [x], dict(x=x)]
     objgraph.show_refs([y], filename='sample-graph.png')
@@ -8,3 +10,7 @@ if __name__=="__main__":
     objgraph.show_most_common_types(limit=20)
     tr = tracker.SummaryTracker()
     tr.print_diff()
+
+
+if __name__ == "__main__":
+    memery_tracker()
